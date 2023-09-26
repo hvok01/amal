@@ -22,6 +22,13 @@ function App() {
           </div>
         </nav>
       </header>
+
+      <main>
+        <small>I'm a</small> <br />
+        <h1> Designer & </h1> <br />
+        <h1>Speaker</h1><br />
+        <small>interested in the ethics of AI</small>
+      </main>
     </>
   )
 }

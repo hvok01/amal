@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Raleway:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Playfair+Display:wght@400;600&family=Raleway:wght@400;500&display=swap');
 
-/* font-family: 'Playfair Display', serif;
-font-family: 'Raleway', sans-serif; 
+/* 
+font-family: 'Cormorant', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif;
 363e21 green
 e5dff5 light
 */
@@ -108,4 +110,71 @@ header nav .site-navlinks ul li .abs-link {
   margin: 0 35%;
   font-size: 1rem;
   letter-spacing: 0rem;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main h1 {
+  margin: 0;
+  font-size: 8.6rem;
+  font-family: 'Cormorant', serif;
+  line-height: 5rem;
+  color: #e5dff5;
+  position: relative;
+  left: 1%;
+  letter-spacing: -0.4rem;
+  font-weight: 300;
+}
+
+main small:first-of-type {
+  position: relative;
+  left: -25%;
+  top: 30px;
+}
+
+main small {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: #e5dff5;
+  position: relative;
+  right: 10%;
+  top: 15px;
+  letter-spacing: -0.02rem;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 800px) {
+
+  main h1 {
+    font-size: 9rem;
+    line-height: 7rem;
+  }
+
+  main small {
+    font-size: 2rem;
+    top: 15px;
+  }
+
+}
+
+@media screen and (min-width: 1300px) {
+
+  main h1 {
+    font-size: 15rem;
+    line-height: 12rem;
+  }
+
+  main small {
+    font-size: 2.3rem;
+    top: 35px;
+  }
+  
 }
