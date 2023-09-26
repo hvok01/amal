@@ -69,7 +69,7 @@ header nav .site-navlinks {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: #e5dff5;
   justify-content: center;
@@ -118,6 +118,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 10vh;
 }
 
 main h1 {
@@ -149,6 +150,102 @@ main small {
   top: 15px;
   letter-spacing: -0.02rem;
   font-weight: 500;
+}
+
+.mission-container, .contact-container, .specialities-container {
+  margin: 0;
+  box-sizing: border-box;
+  margin: 20px;
+  padding: 10px;
+  border-top: 1px solid #e5dff5;
+  margin-top: 5vh;
+}
+
+.mission-container h3, .contact-container h3, .specialities-container h3 {
+  color: #e5dff5;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.mission-container p {
+  color: #e5dff5;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
+}
+
+.contact-container small {
+  color: #e5dff5;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  line-height: -0.1rem;
+}
+
+.contact-container small a {
+  color: #e5dff5;
+}
+
+.contact-container img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  margin-top: 50px;
+}
+
+.specialities-container .specialities-item {
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5dff5;
+}
+
+.specialities-container .specialities-item:last-of-type {
+  border: none;
+}
+
+.specialities-container .specialities-item .specialities {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.specialities-container .specialities-item .specialities .plus-icon {
+  margin: 0;
+}
+
+.specialities-container .specialities-item .specialities .plus-icon div {
+  width: 35px;
+  height: 2px;
+  background-color: #e5dff5;
+  position: relative;
+  top: 0;
+}
+
+.specialities-container .specialities-item .specialities .plus-icon .plus-icon-2 {
+  transform: rotate(90deg);
+  top: -3px;
+}
+
+.specialities-container .specialities-item .specialities p {
+  color: #e5dff5;
+  font-size: 1.4rem;
+  font-family: 'Raleway', sans-serif;
+  margin: 5px 0px;
+}
+
+.specialities-container .specialities-item .specialities-detail {
+  display: none;
+}
+
+.specialities-container .specialities-item .specialities-detail small {
+  color: #e5dff5;
+  font-family: 'Raleway', sans-serif;
+  line-height: 0.3rem;
 }
 
 @media screen and (min-width: 800px) {
