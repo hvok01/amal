@@ -194,18 +194,18 @@ main small {
   margin-top: 50px;
 }
 
-.specialities-container .specialities-item {
+.specialities-container .specialities-container-separator .specialities-item {
   box-sizing: border-box;
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #e5dff5;
 }
 
-.specialities-container .specialities-item:last-of-type {
+.specialities-container .specialities-container-separator .specialities-item:last-of-type {
   border: none;
 }
 
-.specialities-container .specialities-item .specialities {
+.specialities-container .specialities-container-separator .specialities-item .specialities {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -214,11 +214,11 @@ main small {
   cursor: pointer;
 }
 
-.specialities-container .specialities-item .specialities .plus-icon {
+.specialities-container .specialities-container-separator .specialities-item .specialities .plus-icon {
   margin: 0;
 }
 
-.specialities-container .specialities-item .specialities .plus-icon div {
+.specialities-container .specialities-container-separator .specialities-item .specialities .plus-icon div {
   width: 35px;
   height: 2px;
   background-color: #e5dff5;
@@ -226,23 +226,23 @@ main small {
   top: 0;
 }
 
-.specialities-container .specialities-item .specialities .plus-icon .plus-icon-2 {
+.specialities-container .specialities-container-separator .specialities-item .specialities .plus-icon .plus-icon-2 {
   transform: rotate(90deg);
   top: -3px;
 }
 
-.specialities-container .specialities-item .specialities p {
+.specialities-container .specialities-container-separator .specialities-item .specialities p {
   color: #e5dff5;
   font-size: 1.4rem;
   font-family: 'Raleway', sans-serif;
   margin: 5px 0px;
 }
 
-.specialities-container .specialities-item .specialities-detail {
+.specialities-container .specialities-container-separator .specialities-item .specialities-detail {
   display: none;
 }
 
-.specialities-container .specialities-item .specialities-detail small {
+.specialities-container .specialities-container-separator .specialities-item .specialities-detail small {
   color: #e5dff5;
   font-family: 'Raleway', sans-serif;
   line-height: 0.3rem;
@@ -262,7 +262,7 @@ main small {
   text-transform: uppercase;
 }
 
-.speaking-events-container .speaking-events-circle {
+.speaking-events-container .speaking-events-separator .speaking-events-circle {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -276,7 +276,7 @@ main small {
   box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
 }
 
-.speaking-events-container .speaking-events-circle p {
+.speaking-events-container .speaking-events-separator .speaking-events-circle p {
   font-size: 1rem;
   color: #e5dff5;
   font-weight: 500;
@@ -284,7 +284,7 @@ main small {
   top: -20px;
 }
 
-.speaking-events-container .speaking-events-circle a {
+.speaking-events-container .speaking-events-separator .speaking-events-circle a {
   font-size: 1.8rem;
   color: #e5dff5;
   font-weight: 500;
@@ -293,13 +293,13 @@ main small {
   text-align: center;
 }
 
-.speaking-events-container .speaking-events-circle .speaking-events-location {
+.speaking-events-container .speaking-events-separator .speaking-events-circle .speaking-events-location {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.speaking-events-container .speaking-events-circle .speaking-events-location small {
+.speaking-events-container .speaking-events-separator .speaking-events-circle .speaking-events-location small {
   color: #e5dff5;
 }
 
@@ -329,9 +329,51 @@ footer a svg {
     top: 15px;
   }
 
+  .mission-container, .contact-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .mission-container h3, .mission-container p, .contact-container h3, .contact-container small, .contact-container img {
+    flex: 1;
+  }
+
+  .contact-container img {
+    width: auto;
+    margin-top: 0;
+    flex: 2;
+  }
+
+  .specialities-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .specialities-container .specialities-container-separator, .specialities-container h3 {
+    flex: 1;
+  }
+
+  .speaking-events-container {
+    padding-bottom: 40px;
+  }
+
+  .speaking-events-container .speaking-events-separator {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .speaking-events-container .speaking-events-separator .speaking-events-circle {
+    width: 30vw;
+    height: 30vw;
+  }
+
 }
 
 @media screen and (min-width: 1300px) {
+
+  main {
+    padding-bottom: 25vh;
+  }
 
   main h1 {
     font-size: 15rem;

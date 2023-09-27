@@ -48,78 +48,80 @@ function App() {
       <div className="specialities-container">
         <h3>specialities</h3>
 
-        <div className="specialities-item">
-          <div className="specialities">
-            <p>UX Research</p>
-            <div className="plus-icon">
-              <div className="plus-icon-1"></div>
-              <div className="plus-icon-2"></div>
+        <div className="specialities-container-separator">
+          <div className="specialities-item">
+            <div className="specialities">
+              <p>UX Research</p>
+              <div className="plus-icon">
+                <div className="plus-icon-1"></div>
+                <div className="plus-icon-2"></div>
+              </div>
+            </div>
+            <div className="specialities-detail">
+              <small>
+                It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference. 
+              </small>
             </div>
           </div>
-          <div className="specialities-detail">
-            <small>
-              It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference. 
-            </small>
-          </div>
-        </div>
 
-        <div className="specialities-item">
-          <div className="specialities">
-            <p>Strategic Planning</p>
-            <div className="plus-icon">
-              <div className="plus-icon-1"></div>
-              <div className="plus-icon-2"></div>
+          <div className="specialities-item">
+            <div className="specialities">
+              <p>Strategic Planning</p>
+              <div className="plus-icon">
+                <div className="plus-icon-1"></div>
+                <div className="plus-icon-2"></div>
+              </div>
+            </div>
+            <div className="specialities-detail">
+              <small>
+                Don’t worry about sounding professional. Sounds like you. There are over 1.5 billion websites out there, but your story is what’s going to separate this one from the rest. If you read the words back and don’t hear your own voice in your head, that’s a good sign you still have more work to do.
+              </small>
             </div>
           </div>
-          <div className="specialities-detail">
-            <small>
-              Don’t worry about sounding professional. Sounds like you. There are over 1.5 billion websites out there, but your story is what’s going to separate this one from the rest. If you read the words back and don’t hear your own voice in your head, that’s a good sign you still have more work to do.
-            </small>
-          </div>
-        </div>
 
-        <div className="specialities-item">
-          <div className="specialities">
-            <p>Writing & Editing</p>
-            <div className="plus-icon">
-              <div className="plus-icon-1"></div>
-              <div className="plus-icon-2"></div>
+          <div className="specialities-item">
+            <div className="specialities">
+              <p>Writing & Editing</p>
+              <div className="plus-icon">
+                <div className="plus-icon-1"></div>
+                <div className="plus-icon-2"></div>
+              </div>
+            </div>
+            <div className="specialities-detail">
+              <small>
+                Be clear, be confident, and don’t overthink it. The beauty of your story is that it’s going to continue to evolve and your site can evolve with it. Your goal should be to make it feel right for right now. Later will take care of itself. It always does.
+              </small>
             </div>
           </div>
-          <div className="specialities-detail">
-            <small>
-              Be clear, be confident, and don’t overthink it. The beauty of your story is that it’s going to continue to evolve and your site can evolve with it. Your goal should be to make it feel right for right now. Later will take care of itself. It always does.
-            </small>
-          </div>
-        </div>
 
-        <div className="specialities-item">
-          <div className="specialities">
-            <p>Front-End Dev</p>
-            <div className="plus-icon">
-              <div className="plus-icon-1"></div>
-              <div className="plus-icon-2"></div>
+          <div className="specialities-item">
+            <div className="specialities">
+              <p>Front-End Dev</p>
+              <div className="plus-icon">
+                <div className="plus-icon-1"></div>
+                <div className="plus-icon-2"></div>
+              </div>
+            </div>
+            <div className="specialities-detail">
+              <small>
+                It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference. 
+              </small>
             </div>
           </div>
-          <div className="specialities-detail">
-            <small>
-              It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference. 
-            </small>
-          </div>
-        </div>
 
-        <div className="specialities-item">
-          <div className="specialities">
-            <p>Analytics & Data</p>
-            <div className="plus-icon">
-              <div className="plus-icon-1"></div>
-              <div className="plus-icon-2"></div>
+          <div className="specialities-item">
+            <div className="specialities">
+              <p>Analytics & Data</p>
+              <div className="plus-icon">
+                <div className="plus-icon-1"></div>
+                <div className="plus-icon-2"></div>
+              </div>
             </div>
-          </div>
-          <div className="specialities-detail">
-            <small>
-              Don’t worry about sounding professional. Sounds like you. There are over 1.5 billion websites out there, but your story is what’s going to separate this one from the rest. If you read the words back and don’t hear your own voice in your head, that’s a good sign you still have more work to do.
-            </small>
+            <div className="specialities-detail">
+              <small>
+                Don’t worry about sounding professional. Sounds like you. There are over 1.5 billion websites out there, but your story is what’s going to separate this one from the rest. If you read the words back and don’t hear your own voice in your head, that’s a good sign you still have more work to do.
+              </small>
+            </div>
           </div>
         </div>
 
@@ -127,28 +129,30 @@ function App() {
 
       <div className="speaking-events-container">
         <h3>speaking events</h3>
-        <div className="speaking-events-circle">
-          <p>6/29</p>
-          <a href='#'>Cafe Speaker Series</a>
-          <div className="speaking-events-location">
-            <small>123 Demo Street</small>
-            <small>New York, NY 12345</small>
+        <div className="speaking-events-separator">
+          <div className="speaking-events-circle">
+            <p>6/29</p>
+            <a href='#'>Cafe Speaker Series</a>
+            <div className="speaking-events-location">
+              <small>123 Demo Street</small>
+              <small>New York, NY 12345</small>
+            </div>
           </div>
-        </div>
-        <div className="speaking-events-circle">
-          <p>7/14</p>
-          <a href='#'>Emerging Tech Meet-up</a>
-          <div className="speaking-events-location">
-            <small>123 Demo Street</small>
-            <small>New York, NY 12345</small>
+          <div className="speaking-events-circle">
+            <p>7/14</p>
+            <a href='#'>Emerging Tech Meet-up</a>
+            <div className="speaking-events-location">
+              <small>123 Demo Street</small>
+              <small>New York, NY 12345</small>
+            </div>
           </div>
-        </div>
-        <div className="speaking-events-circle">
-          <p>7/29</p>
-          <a href='#'>Artists in conversation</a>
-          <div className="speaking-events-location">
-            <small>123 Demo Street</small>
-            <small>New York, NY 12345</small>
+          <div className="speaking-events-circle">
+            <p>7/29</p>
+            <a href='#'>Artists in conversation</a>
+            <div className="speaking-events-location">
+              <small>123 Demo Street</small>
+              <small>New York, NY 12345</small>
+            </div>
           </div>
         </div>
       </div>
