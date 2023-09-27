@@ -1,7 +1,7 @@
 import './App.css'
-// import FacebookIcon from './assets/FacebookIcon';
-// import InstagramIcon from './assets/InstagramIcon';
-// import TwitterIcon from './assets/TwitterIcon';
+import FacebookIcon from './assets/FacebookIcon';
+import InstagramIcon from './assets/InstagramIcon';
+import TwitterIcon from './assets/TwitterIcon';
 import amalProfileImage from './assets/amal-01.jpeg';
 
 function App() {
@@ -125,33 +125,45 @@ function App() {
 
       </div>
 
-      {/* <div className="speaking-events-container">
+      <div className="speaking-events-container">
         <h3>speaking events</h3>
         <div className="speaking-events-circle">
           <p>6/29</p>
           <a href='#'>Cafe Speaker Series</a>
-          <small>123 Demo Street</small>
-          <small>New York, NY 12345</small>
+          <div className="speaking-events-location">
+            <small>123 Demo Street</small>
+            <small>New York, NY 12345</small>
+          </div>
         </div>
         <div className="speaking-events-circle">
           <p>7/14</p>
           <a href='#'>Emerging Tech Meet-up</a>
-          <small>123 Demo Street</small>
-          <small>New York, NY 12345</small>
+          <div className="speaking-events-location">
+            <small>123 Demo Street</small>
+            <small>New York, NY 12345</small>
+          </div>
         </div>
         <div className="speaking-events-circle">
           <p>7/29</p>
           <a href='#'>Artists in conversation</a>
-          <small>123 Demo Street</small>
-          <small>New York, NY 12345</small>
+          <div className="speaking-events-location">
+            <small>123 Demo Street</small>
+            <small>New York, NY 12345</small>
+          </div>
         </div>
       </div>
 
       <footer>
-        <FacebookIcon />
-        <InstagramIcon />
-        <TwitterIcon />
-      </footer> */}
+        <a href="#">
+          <FacebookIcon />
+        </a>
+        <a href="#">
+          <InstagramIcon />
+        </a>
+        <a href="#">
+          <TwitterIcon />
+        </a>
+      </footer>
     </>
   )
 }

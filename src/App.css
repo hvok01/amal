@@ -248,6 +248,75 @@ main small {
   line-height: 0.3rem;
 }
 
+.speaking-events-container {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #e5dff5;
+  margin: 20px;
+  position: relative;
+}
+
+.speaking-events-container h3 {
+  color: #e5dff5;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
+
+.speaking-events-container .speaking-events-circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  border: 3px solid #000;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  margin: 20px auto;
+  box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
+}
+
+.speaking-events-container .speaking-events-circle p {
+  font-size: 1rem;
+  color: #e5dff5;
+  font-weight: 500;
+  position: relative;
+  top: -20px;
+}
+
+.speaking-events-container .speaking-events-circle a {
+  font-size: 1.8rem;
+  color: #e5dff5;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.speaking-events-container .speaking-events-circle .speaking-events-location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.speaking-events-container .speaking-events-circle .speaking-events-location small {
+  color: #e5dff5;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  background-color: #e5dff5;
+}
+
+footer a svg {
+  margin: 0px 10px;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 800px) {
 
   main h1 {
