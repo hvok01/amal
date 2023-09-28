@@ -1,11 +1,46 @@
+import { useLayoutEffect, useState } from 'react'
 import './App.css'
-import FacebookIcon from './assets/FacebookIcon';
-import InstagramIcon from './assets/InstagramIcon';
-import TwitterIcon from './assets/TwitterIcon';
-import amalProfileImage from './assets/amal-01.jpeg';
+import FacebookIcon from './assets/FacebookIcon'
+import InstagramIcon from './assets/InstagramIcon'
+import TwitterIcon from './assets/TwitterIcon'
+import amalProfileImage from './assets/amal-01.jpeg'
+import gsap from 'gsap'
 
 function App() {
   //https://amal-fluid-demo.squarespace.com/
+  const [timeline, setTimeline] = useState<gsap.core.Timeline>();
+
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+        const tl = gsap.timeline({ paused: true })
+        animationNavBar(tl);
+        setTimeline(tl)
+    });
+    return () => ctx.revert()
+  }, [])
+
+  const animationNavBar = (tl: gsap.core.Timeline) => {
+    tl.to(".site-navlinks", {
+      opacity: 1,
+      duration: 0.2
+    }).to(".line-one", {
+      backgroundColor: "#000",
+      rotate: "-45deg",
+      x: "+=13",
+      y: "+=4"
+    }, "<").to(".line-two", {
+      backgroundColor: "#000",
+      rotate: "45deg",
+      x: "+=12",
+      y: "-=9"
+    }, "<").to(".site-logo a", {
+      color: "#000",
+    }, "<")
+  }
+
+  const animateNavBar = () => {
+    timeline?.reversed() ? timeline.play() : timeline?.reverse();
+  }
 
   return (
     <>
@@ -14,7 +49,7 @@ function App() {
           <div className="site-logo">
             <a href="#">Amal</a>
           </div>
-          <div className="site-hamburger">
+          <div className="site-hamburger" onClick={animateNavBar}>
             <span className="line-one"></span>
             <span className="line-two"></span>
           </div>
