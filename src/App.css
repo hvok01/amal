@@ -368,6 +368,54 @@ footer a svg {
     height: 30vw;
   }
 
+  header nav .site-hamburger {
+    display: none;
+  }
+
+  header nav .site-navlinks {
+    display: flex;
+    opacity: 1;
+    background-color: transparent;
+    width: inherit;
+    height: inherit;
+    position: relative;
+  } 
+
+  header nav .site-navlinks ul {
+    display: flex;
+  }
+
+  header nav .site-navlinks ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  header nav .site-navlinks ul li a {
+    color: #e5dff5;
+    font-size: 1rem;
+    line-height: 1rem;
+    letter-spacing: 0.01rem;
+  }
+
+  header nav .site-navlinks ul li:first-of-type {
+    margin: 0px 20px;
+  }
+
+  header nav .site-navlinks ul li a:first-of-type {
+    transform: translate3d(0px, 0px, 0px) !important;
+  }
+  
+  header nav .site-navlinks ul li .abs-link {
+    position: relative;
+    bottom: 0;
+    border: 1px solid #e5dff5;
+    letter-spacing: 0.01rem;
+    font-size: 1rem;
+    margin: 0;
+  }
+
 }
 
 @media screen and (min-width: 1300px) {

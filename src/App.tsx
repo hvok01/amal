@@ -14,6 +14,10 @@ function App() {
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
         const tl = gsap.timeline({ paused: true })
+        tl.set(".site-logo a", {
+          x: "0",
+          y: "0"
+        })
         animationNavBar(tl);
         setTimeline(tl)
     });
@@ -57,7 +61,7 @@ function App() {
       const interestItemLastChild: any = interestItem.lastChild;
       interestItemLastChild.style.display = interestItemLastChild.style.display == "none" ? "inline" : "none" 
     }
-    
+
     //TODO animation
   }
 
