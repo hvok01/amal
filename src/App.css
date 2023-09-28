@@ -95,6 +95,7 @@ header nav .site-navlinks ul li a {
   text-decoration: none;
   font-weight: 500;
   letter-spacing: -0.1rem;
+  display: flex;
 }
 
 header nav .site-navlinks ul li .abs-link {

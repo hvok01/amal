@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useLayoutEffect, useState } from 'react'
 import './App.css'
 import FacebookIcon from './assets/FacebookIcon'
@@ -35,11 +36,29 @@ function App() {
       y: "-=9"
     }, "<").to(".site-logo a", {
       color: "#000",
-    }, "<")
+    }, "<").to("#speaking-ev-link", {
+      y: "-=8",
+      delay: -0.2,
+    }, "<").to(".abs-link", {
+      y: "-=6",
+      delay: -0.4,
+    })
   }
 
   const animateNavBar = () => {
     timeline?.reversed() ? timeline.play() : timeline?.reverse();
+  }
+
+  const showSpecialitiesDetail = (pos: number) => {
+    const allItems = document.querySelectorAll('.specialities-item');
+
+    if(allItems && allItems.length > 0) {
+      const interestItem = allItems[pos];
+      const interestItemLastChild: any = interestItem.lastChild;
+      interestItemLastChild.style.display = interestItemLastChild.style.display == "none" ? "inline" : "none" 
+    }
+    
+    //TODO animation
   }
 
   return (
@@ -55,7 +74,7 @@ function App() {
           </div>
           <div className="site-navlinks">
             <ul>
-              <li><a href="#">Speaking events</a></li>
+              <li><a href="#" id="speaking-ev-link">Speaking events</a></li>
               <li><a href="#" className="abs-link">Contact Me</a></li>
             </ul>
           </div>
@@ -85,7 +104,7 @@ function App() {
 
         <div className="specialities-container-separator">
           <div className="specialities-item">
-            <div className="specialities">
+            <div className="specialities" onClick={() => showSpecialitiesDetail(0)}>
               <p>UX Research</p>
               <div className="plus-icon">
                 <div className="plus-icon-1"></div>
@@ -100,7 +119,7 @@ function App() {
           </div>
 
           <div className="specialities-item">
-            <div className="specialities">
+            <div className="specialities" onClick={() => showSpecialitiesDetail(1)}>
               <p>Strategic Planning</p>
               <div className="plus-icon">
                 <div className="plus-icon-1"></div>
@@ -115,7 +134,7 @@ function App() {
           </div>
 
           <div className="specialities-item">
-            <div className="specialities">
+            <div className="specialities" onClick={() => showSpecialitiesDetail(2)}>
               <p>Writing & Editing</p>
               <div className="plus-icon">
                 <div className="plus-icon-1"></div>
@@ -130,7 +149,7 @@ function App() {
           </div>
 
           <div className="specialities-item">
-            <div className="specialities">
+            <div className="specialities" onClick={() => showSpecialitiesDetail(3)}>
               <p>Front-End Dev</p>
               <div className="plus-icon">
                 <div className="plus-icon-1"></div>
@@ -145,7 +164,7 @@ function App() {
           </div>
 
           <div className="specialities-item">
-            <div className="specialities">
+            <div className="specialities" onClick={() => showSpecialitiesDetail(4)}>
               <p>Analytics & Data</p>
               <div className="plus-icon">
                 <div className="plus-icon-1"></div>
