@@ -437,7 +437,7 @@ footer a svg {
 }
 
 header nav .site-navlinks ul li .abs-link:hover {
-  animation: 0.4s both 0s animateBackground;
+  animation: 0.4s forwards 0s animateBackground;
 }
 
 header nav .site-navlinks ul li .abs-link {
@@ -451,4 +451,22 @@ header nav .site-navlinks ul li .abs-link {
     background-position: bottom;
     color: #363e21;
   }
+}
+
+#speaking-ev-link:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #e5dff5;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+#speaking-ev-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
