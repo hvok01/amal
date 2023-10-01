@@ -65,6 +65,32 @@ function App() {
     //TODO animation
   }
 
+  const animateContactMeLinkOnMouseEnter = () => {
+    gsap.set(".abs-link", {
+      backgroundImage: "linear-gradient(to top, #e5dff5 50%, transparent 50%)",
+      backgroundSize: "100% 200%",
+      backgroundPosition: "top",
+      backgroundColor: "#363e21",
+      color: "#e5dff5"
+    })
+    gsap.to(".abs-link", {
+      animation: "0.4s forwards 0s animateBackground"
+    })
+  }
+
+  const animateContactMeLinkOnMouseLeave = () => {
+    gsap.set(".abs-link", {
+      backgroundImage: "linear-gradient(to bottom, #363e21 50%, transparent 50%)",
+      backgroundSize: "100% 80px",
+      backgroundPosition: "bottom",
+      backgroundColor: "#e5dff5",
+      color: "#363e21"
+    })
+    gsap.to(".abs-link", {
+      animation: "0.4s forwards 0s animateBackgroundLeave"
+    })
+  }
+
   return (
     <>
       <header>
@@ -79,7 +105,7 @@ function App() {
           <div className="site-navlinks">
             <ul>
               <li><a href="#" id="speaking-ev-link">Speaking events</a></li>
-              <li><a href="#" className="abs-link">Contact Me</a></li>
+              <li><a href="#" className="abs-link" onMouseEnter={animateContactMeLinkOnMouseEnter} onMouseLeave={animateContactMeLinkOnMouseLeave}>Contact Me</a></li>
             </ul>
           </div>
         </nav>
